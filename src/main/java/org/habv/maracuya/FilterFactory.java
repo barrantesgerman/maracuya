@@ -448,15 +448,13 @@ public final class FilterFactory {
     /**
      * Create a filter with is null operator.
      * <p>
-     * For example: {@code isNull("book.authorId","authorId",true)} will
-     * generate the following sql: {@code book.authorId IS NULL :authorId} and
-     * put in the parameters the following key/value:
-     * {@code map.put("authorId",true);}
+     * For example: {@code isNull("book.authorId",true)} will generate the
+     * following sql: {@code book.authorId IS NULL}
      *
      * @param columnName column name
      * @param apply indicates whether the filter can be applied
      * @return filter with is null operator
-     * @throws NullPointerException if {@code columnName} are {@code null}
+     * @throws NullPointerException if {@code columnName} is {@code null}
      */
     @SuppressWarnings("PMD.LinguisticNaming")
     public static Filter isNull(String columnName, boolean apply) {
@@ -469,15 +467,13 @@ public final class FilterFactory {
     /**
      * Create a filter with is not null operator.
      * <p>
-     * For example: {@code isNotNull("book.authorId","authorId",true)} will
-     * generate the following sql: {@code book.authorId IS NOT NULL :authorId}
-     * and put in the parameters the following key/value:
-     * {@code map.put("authorId",true);}
+     * For example: {@code isNotNull("book.authorId",true)} will generate the
+     * following sql: {@code book.authorId IS NOT NULL}
      *
      * @param columnName column name
      * @param apply indicates whether the filter can be applied
      * @return filter with is not null operator
-     * @throws NullPointerException if {@code columnName} are {@code null}
+     * @throws NullPointerException if {@code columnName} is {@code null}
      */
     @SuppressWarnings("PMD.LinguisticNaming")
     public static Filter isNotNull(String columnName, boolean apply) {

@@ -789,8 +789,8 @@ public final class FilterFactory {
      *
      * @param columnName column name
      * @param operator operator
-     * @param leftParamName left paramenter name
-     * @param rightParamName right paramenter name
+     * @param leftParamName left parameter name
+     * @param rightParamName right parameter name
      * @param leftValue left value
      * @param rightValue tight value
      * @return filter with a pair of values
